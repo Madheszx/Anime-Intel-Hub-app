@@ -49,4 +49,3 @@ export default function BottomNav({ currentTab, setTab }: BottomNavProps) {
     </nav>
   );
 }
-
