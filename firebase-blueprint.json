@@ -1,0 +1,42 @@
+{
+  "entities": {
+    "Spark": {
+      "title": "Spark",
+      "description": "Short anime video snippet",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "url": { "type": "string" },
+        "thumbnail": { "type": "string" },
+        "genre": { "type": "string" },
+        "rating": { "type": "number" },
+        "type": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["title", "url", "thumbnail", "genre", "rating", "type", "createdAt"]
+    },
+    "News": {
+       "title": "News",
+       "description": "Custom anime news article",
+       "type": "object",
+       "properties": {
+         "title": { "type": "string" },
+         "content": { "type": "string" },
+         "imageUrl": { "type": "string" },
+         "author": { "type": "string" },
+         "date": { "type": "string", "format": "date-time" }
+       },
+       "required": ["title", "content", "imageUrl", "author", "date"]
+    }
+  },
+  "firestore": {
+    "/sparks/{sparkId}": {
+      "schema": "Spark",
+      "description": "Collection of sparks videos"
+    },
+    "/news/{newsId}": {
+      "schema": "News",
+      "description": "Collection of news articles"
+    }
+  }
+}
