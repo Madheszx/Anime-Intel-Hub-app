@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Anime Intel Hub</string>
+    <string name="title_activity_main">Anime Intel Hub</string>
+    <string name="package_name">com.animeintelhub.app</string>
+    <string name="custom_url_scheme">com.animeintelhub.app</string>
+</resources>
